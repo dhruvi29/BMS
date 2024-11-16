@@ -14,15 +14,27 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+	<style>
+		.container {
+			padding-top: 20px;
+		}
 
-	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-	<script type="text/javascript" src="js/jquery.js">
-	</script>
-	<script type="text/javascript" src="js/bootstrap.js">
-	</script> 
--->
-	<link rel="stylesheet" type="text/css" href="css/bookShow.css"/>
-	<script type="text/javascript" src="js/bookShow.js"></script> 
+		.main_container {
+			/*width:520px;
+	height:700px;*/
+			background: #FAFAFA;
+			/*border: 1px solid #dce3b6;*/
+			overflow: auto;
+		}
+
+		.carousel-inner>.item>img {
+			width: 93%;
+			height: 500px;
+			margin: 0 auto;
+			border-radius: 10px;
+			border: 1px solid #000;
+		}
+	</style>
 
 </head>
 
@@ -104,48 +116,41 @@
 						<form accept-charset="UTF-8" role="form">
 							<fieldset>
 								<div class="row">
-									<div class="col-md-4 col-xs-12 btn-group btn-input clearfix">
-										<button type="button"
-											class="btn btn-default movies-toggle dropdown-toggle form-control"
-											data-toggle="dropdown">
-											<span data-bind="label">Select Movie</span>&nbsp;<span class="caret"></span>
-										</button>
-										<ul class="movies dropdown-menu col-md-11 col-xs-11" role="menu">
-										</ul>
+									<div class="col-md-3 col-xs-12 btn-group btn-input clearfix">
+										<select class="form-control" aria-label="Default select example">
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
 									</div>
 
 
 
-									<div class="col-md-4 col-xs-12 btn-group btn-input clearfix">
-										<button type="button"
-											class="btn btn-default category-toggle dropdown-toggle form-control disabled"
-											data-toggle="dropdown">
-											<span data-bind="label">Select Category</span>&nbsp;<span
-												class="caret"></span>
-										</button>
-										<ul class="movie_category dropdown-menu col-md-11 col-xs-11" role="menu">
-										</ul>
+									<div class="col-md-3 col-xs-12 btn-group btn-input clearfix">
+										<select class="form-control" aria-label="Default select example">
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
 									</div>
 
-									<div class="col-md-4 col-xs-12 btn-group btn-input clearfix">
-										<button type="button"
-											class="btn btn-default quantity-toggle dropdown-toggle form-control disabled"
-											data-toggle="dropdown">
-											<span data-bind="label">Quantity</span>&nbsp;<span class="caret"></span>
-										</button>
-										<ul class="quantity dropdown-menu col-md-11 col-xs-11" role="menu">
-										</ul>
+									<div class="col-md-3 col-xs-12 btn-group btn-input clearfix">
+										<select class="form-control" aria-label="Default select example">
+											<option selected>Open this select menu</option>
+											<option value="1">One</option>
+											<option value="2">Two</option>
+											<option value="3">Three</option>
+										</select>
 									</div>
-								</div>
-
-
-
-								<div class="row">
-									<div class="col-md-2 col-xs-12" style="float:right;">
-										<input class="book col-xs-12 btn btn-md btn-success disabled" type="button"
+									<div class="col-md-3 col-xs-12" style="float:right;">
+										<input class="book col-xs-12 btn btn-md btn-success" type="button"
 											value="Book Tickets">
 									</div>
+
 								</div>
+
 
 
 							</fieldset>
@@ -155,7 +160,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 </body>
 
